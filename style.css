@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web';
+}
+body {
+  background:#ffffff;
+  padding: 0;
+}
+
+.nav {
+  font-family: 'Titillium Web';
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.nav  {
+  box-sizing: border-box;
+  transition: all .35s ease;
+  padding: 0.5em;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.nav a {
+  padding: .5em .8em;
+  color: rgba(27, 13, 224, 0.587);
+  position: relative;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height:0.9em;
+  width: 0.9em;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 0.1em solid rgb(22, 40, 242);
+  border-right: 0.1em solid rgb(16, 109, 186);
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 0.1em solid rgb(22, 172, 242);
+  border-left: 0.1em solid rgb(22, 172, 242);
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: rgb(22, 172, 242);
+}
+
+.rubrik{
+    text-align: center;
+    background:linear-gradient(#ffffff,rgb(22, 172, 242) );
+    width: 100%;
+    color: rgba(27, 13, 224, 0.587);
+    
+   
+}
+
+p{
+    font-size: larger;
+    padding: 0.5em;
+}
+
+#htmlbild{
+    width: 100%;
+    border:rgb(30, 82, 179);
+    border-style:solid;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0.25em;
+    border-bottom-width: 0.25em;
+}
+
+h1{
+  padding: 0.2em;
+}
+
+#stycken{
+  text-align: left;
+  width: 50%;
+  padding: 0.2em;
+}
+
+h2{
+  text-align: left;
+  width: 50%;
+  padding: 0.2em;
+}
+
+.Kursrubrik{
+  text-align: center;
+  width: 100%;
+  color: rgba(27, 13, 224, 0.587);
+}
+
+.Kurssida{
+  background:linear-gradient(#ffffff,rgb(22, 172, 242) );
+  height: 132%;
+}
+
+#kursbild{
+  right: 4em;
+  width: 25%;
+  position: absolute;
+  top: 14em;
+  border:rgb(30, 82, 179);
+  border-style:solid;
+ border-width: 0.25em;
+}
+
+#tagglista{
+  padding: 0.5em;
+  margin: 0;
+
+}
+
+#tagglista li{
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+  margin: 0;
+}
+
+iframe{
+  align-items: center;
+}
+
+#Webbinfo{
+  text-align: center;
+  font-size: 1.5em;
+  background-color:rgb(15, 56, 74) ;
+  padding: 1em;
+  color: #ffffff;
+  bottom:0;
+}
+
+#Upphovsrätt{
+height: 100%;
+}
+
